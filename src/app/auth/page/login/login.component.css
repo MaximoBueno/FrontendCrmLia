@@ -82,6 +82,8 @@
 
   .cus_submit:disabled {
     background: gray;
+    opacity: 0.5;
+    cursor: not-allowed;
   }
   
   @media only screen and (max-width: 590px) {

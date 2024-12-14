@@ -1,6 +1,6 @@
 # Frontend CRM Lia
 ## ¿Qué es?
-Es el proyecto Frontend para un CRM completo.
+Es el proyecto Frontend para el CRM Lia.
 
 ## Tecnologías Principales:
 * Angular

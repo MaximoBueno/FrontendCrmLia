@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="cus_decorador">
+      <div class="cus_contenedor">
+  
+        <div class="cus_card_img"></div>
+  
+        <div class="cus_card_login">
+            <h4 class="cus_title text-center mt-4 mb-4">
+              CRM Lia
+            </h4>
+            <form (submit)="submit($event)"  [formGroup]="formLogin" class="cus_form_box" >
+              <div class="form-input">
+  
+                <div class="cus_form_input">
+                  <input type="email" formControlName="correo"  
+                  placeholder="Escribir tu correo" 
+                  />
+                </div>
+                
+                <div class="cus_form_input">
+                  <input type="password" formControlName="clave" 
+                    placeholder="Escribir tu clave" tabindex="10"
+                    />
+                </div>
+  
+                <div class="mb-2 text-center">
+                  <button type="button" 
+                    [disabled]="formLogin.invalid"
+                    (click)="onLogin()" 
+                    class="cus_submit text-uppercase">
+                    Login
+                  </button>
+                </div>
+  
+                <hr class="my-2" />
+  
+                <div class="cus_register text-center">
+                  ¿No tienes una cuenta?
+                  <a href="#" class="cus_register_link">
+                    Registrate
+                  </a>
+                </div>
+  
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>

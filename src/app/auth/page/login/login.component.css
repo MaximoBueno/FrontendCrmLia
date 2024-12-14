@@ -1,0 +1,141 @@
+
+
+.cus_decorador{
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0 auto;
+  }
+  
+  .cus_contenedor{
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: white;
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+  }
+  
+  .cus_card_img{
+    width: 40vh !important;
+    background: url("../../../../../public/login.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .cus_card_login{
+    width: 100% !important;
+    padding: 2rem;
+  }
+  
+  .cus_form_input input{
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #00000020;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+  }
+  
+  .cus_submit{
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #007bff;
+    color: #fff;
+    font-size: 90%;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    transition: 0.5s;
+    padding: 12px;
+  }
+  
+  .cus_submit:hover{
+    background: #0069d9;
+  }
+  
+  .cus_register_link{
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .cus_register_link:hover{
+    color: #0069d9;
+    text-decoration: none;
+  }
+  
+  .cus_register{
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .cus_title{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cus_submit:disabled {
+    background: gray;
+  }
+  
+  @media only screen and (max-width: 590px) {
+  
+    .cus_contenedor{
+      display: flex;
+      width: 100%;
+    }
+  
+    .cus-card-img{
+      width: 10% !important;
+    }
+  
+    .cus_card_login{
+      width: 90% !important;
+    }
+  
+    .cus_register{
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+  
+    .cus_title{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .cus_decorador{
+      padding: 0px !important;
+    }
+  
+    .cus_card_login{
+      padding: 1rem;
+    }
+    
+  
+  }
+  
+  @media only screen and (max-width: 490px) {
+    .cus_contenedor{
+      display: block;
+      width: 100%;
+    }
+  
+    .cus-card-img{
+      width: 0% !important;
+      display: none !important;
+    }
+  
+    .cus_card_login{
+      width: 100% !important;
+    }
+  
+    .cus_decorador{
+      padding: 0px !important;
+    }
+  }

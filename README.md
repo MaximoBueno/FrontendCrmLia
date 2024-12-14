@@ -3,7 +3,8 @@
 Es el proyecto Frontend para el CRM Lia.
 
 ## Tecnologías Principales:
-* Angular
+* Angular.
+* TypeScript.
 
 ## Autor:
 * Max.

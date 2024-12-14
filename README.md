@@ -10,10 +10,11 @@ Es el proyecto Frontend para un CRM completo.
 
 ## Tareas:
 - [x] Actualizar Readme y Licencia
-- [x] Agrego configuración del front
-- [x] Agrego interfase auth.
-- [x] Agrego service auth.
-- [x] Agrego component auth.
+- [x] Agregar configuración del front
+- [x] Agregar interfase auth
+- [x] Agregar service auth
+- [x] Agregar component auth
 - [x] Base para las rutas de los componentes
+- [x] Agregar y validar interface login
 - [ ] ...
 - [x] ...

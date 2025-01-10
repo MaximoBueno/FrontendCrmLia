@@ -35,8 +35,8 @@ export class LoginComponent {
       clave: this.formLogin.value.clave
     }
 
-    this.authService.login(modelo).subscribe((response) => {
-      console.log(response);
+    this.authService.token(modelo).subscribe((response) => {
+      
     });
   }
 

@@ -18,6 +18,14 @@ export class AuthService {
     private http: HttpClient
   ) {}
 
+  token(modelo:LoginUsuarioRequest): Observable<LoginUsuarioResponse> {
+    return this.http.post<LoginUsuarioResponse>(`${this.baseUrl}/Token`, modelo).pipe(
+      tap((response) => {
+        console.log(response);
+      })
+    );
+  }
+
   login(modelo:LoginUsuarioRequest): Observable<LoginUsuarioResponse> {
     return this.http.post<LoginUsuarioResponse>(`${this.baseUrl}/Login`, modelo).pipe(
       tap((response) => {

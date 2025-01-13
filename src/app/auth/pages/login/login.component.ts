@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { LoginUsuarioRequest } from '../../interfaces/user.interface';
+
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,9 @@ export class LoginComponent {
 
   constructor(
     private authService: AuthService, 
-    private fb: FormBuilder) {
+    private fb: FormBuilder,
+    private router: Router
+  ) {
 
     this.formLogin = this.fb.group({
       correo: ['',[Validators.required, Validators.minLength(5)]],
@@ -35,8 +38,9 @@ export class LoginComponent {
       clave: this.formLogin.value.clave
     }
 
-    this.authService.token(modelo).subscribe((response) => {
-      
+    this.authService.token(modelo).subscribe((resp) => {
+      console.log(resp);
+      this.router.navigate(['/management']);
     });
   }
 

@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withFetch } from '@angular/common/http'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ErrorComponent } from './shared/pages/error/error.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

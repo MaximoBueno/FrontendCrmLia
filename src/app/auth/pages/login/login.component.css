@@ -46,7 +46,7 @@
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    background: #007bff;
+    background: #027581;
     color: #fff;
     font-size: 90%;
     font-weight: bold;
@@ -56,17 +56,17 @@
   }
   
   .cus_submit:hover{
-    background: #0069d9;
+    background: #048a99;
   }
   
   .cus_register_link{
     text-decoration: none;
-    color: #007bff;
+    color: #027581;
     font-weight: bold;
   }
   
   .cus_register_link:hover{
-    color: #0069d9;
+    color: #048a99;
     text-decoration: none;
   }
   

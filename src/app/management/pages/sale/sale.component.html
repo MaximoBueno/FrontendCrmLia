@@ -1,1 +1,24 @@
-<p>sale works!</p>
+<div class="activity-card">
+    <h3 style="padding-top: 18px;">Atenciones</h3>
+    <div *ngIf="listaDeContactos !== undefined " class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Nombres</th>
+                    <th>N° Documento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listaDeContactos; let indice=index" >
+                    <td>{{ item.apellidoPaterno }}</td>
+                    <td>{{ item.apellidoMaterno }}</td>
+                    <td>{{ item.nombres }}</td>
+                    <td>{{ item.numeroDocumento }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -39,7 +39,7 @@ export class LoginComponent {
     }
 
     this.authService.token(modelo).subscribe((resp) => {
-      console.log(resp);
+      //console.log(resp);
       this.router.navigate(['/management']);
     });
   }

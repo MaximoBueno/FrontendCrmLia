@@ -24,6 +24,10 @@ export class StorageShareService{
         localStorage.setItem('token',token);
     }
 
+    destroyToken():void{
+        localStorage.removeItem('token');
+    }
+
     loadToken():string{
         const rawToken = localStorage.getItem('token');
         return  (rawToken ? rawToken : '');

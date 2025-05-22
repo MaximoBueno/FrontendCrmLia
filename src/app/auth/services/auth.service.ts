@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap } from 'rxjs';
+import { Observable, of, tap } from 'rxjs';
 
 import { environment } from '../../../environments/environments';
 import { LoginUsuarioRequest, LoginUsuarioResponse } from '../interfaces/user.interface';
 import { StorageShareService } from '../../shared/services/storage.share.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,8 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    private myStorage:StorageShareService
+    private myStorage:StorageShareService,
+    private router:Router
   ) {}
 
   token(modelo:LoginUsuarioRequest): Observable<LoginUsuarioResponse> {
@@ -37,7 +39,12 @@ export class AuthService {
   }
 
   logout(): void{
-    //write code
+    this.myStorage.destroyToken();
+    this.router.navigate(['/auth/']);
+  }
+
+  checkAuthentication():Observable<boolean>{
+    return of(this.myStorage.existToken());
   }
 
 }
